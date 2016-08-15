@@ -15,12 +15,7 @@ _List of specifications (specs) for the completed goal. These are declarative se
 - [ ] Create a ReadMe that describes each method and provides an example of use. 
 - [ ] Publish package to NPM.
 - [ ] Write tests for those methods described.
-
-
-### Optional
-
-
-- [ ] Showcase methods in a simple website app (optional)_.
+- [ ] Complete 25 commonly used functions from the LoDash library
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
