@@ -1,4 +1,4 @@
-var head = require("../head.js")
+var head = require("../src/head.js")
 
 describe('head', ()=> {
   it('returns the first element in an array', () => {

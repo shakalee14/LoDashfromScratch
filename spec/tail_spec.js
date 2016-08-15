@@ -1,4 +1,4 @@
-var tail = require("../tail.js")
+var tail = require("../src/tail.js")
 
 describe('tail', ()=> {
   it('returns the first element in an array', () => {
