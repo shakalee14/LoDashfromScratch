@@ -1,6 +1,6 @@
-var head = function(array){
+const tail = array => {
   array.shift()
   return array
 }
 
-module.exports = head
+export { tail }
