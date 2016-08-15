@@ -1,0 +1,5 @@
+const toString = () => {
+  
+}
+
+export { toString }
