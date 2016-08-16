@@ -1,4 +1,4 @@
-const toString = ( input ) => {
+const toString = input => {
 	return input === undefined || input === null ? '' : '' + input
 
 	}
