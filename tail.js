@@ -1,6 +1,11 @@
 var head = function(array){
-  array.shift()
-  return array
+  let result = []
+  let index = array.length - 1
+  while (index > 0){
+    console.log(index)
+    result.push(array[index])
+    index--
+  }
+  return (result.reverse())
 }
-
-module.exports = head
+export { head }
