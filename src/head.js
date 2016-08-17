@@ -1,5 +1,8 @@
-var head = function(array){
-  return array[0]
+const head = function(array){
+  if( array === null ){
+    return []
+  }
+  else {return array[0]}
 }
 
-module.exports = head
+export { head }
