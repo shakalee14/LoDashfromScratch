@@ -2,21 +2,15 @@ import {tail} from '../src/tail'
 
 describe('tail', ()=> {
   it('returns the first element in an array', () => {
-    const array = [1,2,3,4,5]
-    expect(tail(array))
-    .toEqual([2,3,4,5])
+    expect(tail([1,2,3,4,5])).toEqual([2,3,4,5])
   }),
 
   it('returns the first element in an array', () => {
-    const array2 = [2,3,4,5]
-    expect(tail(array2))
-    .toEqual([3,4,5])
+    expect(tail([2,3,4,5])).toEqual([3,4,5])
   }),
 
   it('returns the first element in an array', () => {
-    const array3 = [3,4,5,]
-    expect(tail(array3))
-    .toEqual([4,5])
+    expect(tail([3,4,5,])).toEqual([4,5])
   }),
 
   it('returns the first element in an array', () => {

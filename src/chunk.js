@@ -4,11 +4,11 @@ const chunk = (array, size) => {
   }
 
   const arrays = []
-
+  
   for( let i = 0; i < array.length; i = i + size ) {
     const newArray = []
 
-    for( let j = 0; j < size && i + j < array.length; j++ ) {
+  for( let j = 0; j < size && i + j < array.length; j++ ) {
       newArray.push( array[ i + j ] ) 
     }
 
