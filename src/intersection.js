@@ -1,20 +1,19 @@
 const intersection = ( input1, input2 ) => {
-if ( !(input1 instanceof Array ) || input2 instanceof Array ) {
-    return []
+  const result = []
+  
+  while ( input1.length > 0 && input2.length > 0){
+    if ( input1[0] < input2[0]){
+      input1.shift();
+    } else if( input1[0] > input2[0]){
+      input2.shift();
     } else {
-
-    let result = []
-
-    for(index = 0; index < input1.length; index++) {
-      for(value = 0; value < input2.length; value++){
-        if(input1[index] === input2[value]) {
-          return input1[index] === input2[value]
-        }
-      }
+      result.push(input1.shift());
+      input2.shift()
     }
-
-  return result
   }
+
+return result
+
 }
 
 export { intersection }

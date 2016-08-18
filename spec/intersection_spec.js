@@ -1,4 +1,4 @@
-import { intersection } from '../src/intersection'
+import { intersection } from '../dist/intersection'
 
 describe('intersection', ()=> {
   it('returns the intersection of values present in both input arrays', () => {
