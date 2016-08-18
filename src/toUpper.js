@@ -1,20 +1,29 @@
-const toUpper = input => {
-  let newString = ''
 const UPPER_A = 65
 const UPPER_Z = 90
 const LOWER_A = 97
 const LOWER_Z = 122
 
-  for(let index = 0; index < input.length; index++){
-    let code = input.charCodeAt(index)
-    if( code >= LOWER_A && code <= LOWER_Z){
-      let Upper = (code - 32)
-      return Upper     
+const toUpper = input => {
+  if( input === null || input === undefined ) {
+    return ''
+  } 
+
+  let newString = ''
+
+  for( let index = 0; index < input.length; index++ ) {
+    let code = input.charCodeAt( index )
+    let letterCode 
+
+    if( code >= LOWER_A && code <= LOWER_Z ){
+      letterCode = ( code - LOWER_A ) + UPPER_A
+    } else {
+      letterCode = code
+    }
+
+    newString += String.fromCharCode( letterCode )
   }
 
   return newString 
-    }
-
 }
 
 
