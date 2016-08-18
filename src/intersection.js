@@ -1,19 +1,29 @@
-const intersection = ( input1, input2 ) => {
-  const result = []
-  
-  while ( input1.length > 0 && input2.length > 0){
-    if ( input1[0] < input2[0]){
-      input1.shift();
-    } else if( input1[0] > input2[0]){
-      input2.shift();
-    } else {
-      result.push(input1.shift());
-      input2.shift()
+const intersection = ( ...inputs ) => {
+  let result = inputs[ 0 ]
+
+  for( let index = 1; index < inputs.length; index++ ) {
+    result = intersectionOfTwoArrays( result, inputs[ index ] )
+  }
+
+  return result
+}
+
+const intersectionOfTwoArrays = (first, second) => {
+  let keepers = []
+
+  for( let index = 0; index < first.length; index++ ){
+    let found = false 
+
+    for ( let jindex = 0; jindex < second.length; jindex++ ){
+      found = first[index] === second[jindex] || found
+    }
+    
+    if( found ){
+      keepers.push(first[index])
     }
   }
 
-return result
-
+  return keepers
 }
 
 export { intersection }
