@@ -1,4 +1,4 @@
-var head = function(array){
+var tail = function(array){
   let result = []
   let index = array.length - 1
   while (index > 0){
@@ -8,4 +8,4 @@ var head = function(array){
   }
   return (result.reverse())
 }
-export { head }
+export { tail }
