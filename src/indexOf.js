@@ -5,7 +5,8 @@ const indexOf = (input, inputValue) => {
       return index
     } 
   }
-    return -1 
+
+  return -1 
 }
 
 
