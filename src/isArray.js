@@ -1,8 +1,3 @@
-const isArray = input => {
-  if( input instanceof Array ){
-    return true
-  } 
-  return false
-}
+const isArray = input => input instanceof Array
 
 export { isArray }
