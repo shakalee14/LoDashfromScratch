@@ -10,7 +10,7 @@ This goal is important in learning JavaScript and understanding how high level d
 
 - [X] Write functions in ES6.
 - [X] Create a ReadMe that describes each method and provides an example of use. 
-- [X] Publish package to NPM.
+- [X] Publish package to NPM: <a href= 'https://www.npmjs.com/package/LoDashfromScratch'/> 
 - [X] Write tests for those methods described.
 - [X] Complete 25 commonly used functions from the LoDash library
 - [X] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
