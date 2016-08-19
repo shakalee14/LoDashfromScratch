@@ -1,4 +1,4 @@
-1. nth </br>
+nth </br>
 Gets the element at index n of array. If n is negative, the nth element from the end is returned.
     
 Example: </br>
@@ -10,14 +10,14 @@ Example: </br>
       _.nth(array, -2);
       // ➜ 'c'; </br>
 
-2. tail </br>
+tail </br>
 Gets all but the first element of array. </br>
 
 Example: </br>
       _.tail([1, 2, 3]);</br>
       // ➜ [2, 3] </br>
 
-3. head </br>
+head </br>
 Gets the first element of array. </br>
 
 Example: </br> 
@@ -27,7 +27,7 @@ Example: </br>
       _.head([]); </br>
       // ➜ undefined </br>
 
-4. chunk </br>
+chunk </br>
 Creates an array of elements split into groups the length of size. If array can’t be split evenly, the final chunk will be the remaining elements.
 </br> 
 
@@ -38,7 +38,7 @@ Example: </br>
       _.chunk(['a', 'b', 'c', 'd'], 3); </br>
       // ➜ [['a', 'b', 'c'], ['d']] </br>
 
-5. remove </br>
+remove </br>
 Removes all elements from array that predicate returns truthy for and returns an array of the removed elements. The predicate is invoked with three arguments: (value, index, array). 
       </br>
       
@@ -54,7 +54,7 @@ Example: </br>
       console.log(evens); </br>
       // ➜ [2, 4] </br>
       
-6. pull </br>
+pull </br>
 Removes all given values from array using SameValueZero for equality comparisons.  
 </br> 
 
@@ -65,7 +65,7 @@ Example: </br>
       console.log(array); </br>
       // ➜ ['b', 'b'] </br>
 
-7. take </br>
+take </br>
 Creates a slice of array with n elements taken from the beginning. </br>
 
 Example: </br>
@@ -81,7 +81,7 @@ Example: </br>
       _.take([1, 2, 3], 0); </br>
       // ➜ [] </br>
       
-8. zip </br>
+zip </br>
 Creates an array of grouped elements, the first of which contains the first elements of the given arrays, the second of which contains the second elements of the given arrays, and so on. </br>
 
 Example: </br>
@@ -89,7 +89,7 @@ Example: </br>
       _.zip(['a', 'b'], [1, 2], [true, false]); </br>
       // ➜ [['a', 1, true], ['b', 2, false]] </br>
 
-9. parseInt </br>
+parseInt </br>
 Converts string to an integer of the specified radix. If radix is undefined or 0, a radix of 10 is used unless value is a hexadecimal, in which case a radix of 16 is used. </br>
 
 Example: </br>
@@ -97,14 +97,14 @@ Example: </br>
       _.parseInt('08'); </br>
       // ➜ 8 </br>
       
-10. intersection </br> 
+intersection </br> 
 Creates an array of unique values that are included in all given arrays using SameValueZero for equality comparisons. The order of result values is determined by the order they occur in the first array. </br>
 
 Example: </br>
 
       _.intersection([2, 1], [2, 3]);</br>
       // ➜ [2] </br> 
-11. reverse </br>
+reverse </br>
 Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.  </br>
 
 Example: </br> 
@@ -115,7 +115,7 @@ Example: </br>
       console.log(array); </br>
       // ➜ [3, 2, 1] </br>
 
-12. indexOf </br>
+indexOf </br>
 Gets the index at which the first occurrence of value is found in array using SameValueZero for equality comparisons. If fromIndex is negative, it’s used as the offset from the end of array. </br>
 
 Example: </br>
@@ -127,7 +127,7 @@ Example: </br>
       _.indexOf([1, 2, 1, 2], 2, 2); </br>
       // ➜ 3 </br>
 
-13. toUpper </br>
+toUpper </br>
 Converts string, as a whole, to upper case. </br> 
 
 Example: </br> 
@@ -137,7 +137,7 @@ Example: </br>
       _.toUpper('fooBar'); </br> 
       // ➜ 'FOOBAR' </br> 
       
-14. toLower </br>
+toLower </br>
 Converts string, as a whole, to lower case. </br> 
 
 Example: </br> 
@@ -148,7 +148,7 @@ Example: </br>
       _.toLower('fooBar'); </br>
       // ➜ 'foobar' </br> 
       
-15. difference </br>
+difference </br>
 Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons. The order of result values is determined by the order they occur in the first array.  </br>
 
 Example: </br>
@@ -156,7 +156,7 @@ Example: </br>
       _.difference([2, 1], [2, 3]); </br>
       // ➜ [1] </br>
 
-16. map </br> 
+map </br> 
 Creates an array of values by running each element in collection thru iteratee. The iteratee is invoked with three arguments:
 (value, index|key, collection). </br>
 
@@ -181,7 +181,7 @@ Example: </br>
       _.map(users, 'user');</br>
       // ➜ ['barney', 'fred']</br>
       
-17. includes </br>
+includes </br>
 Checks if value is in collection. If collection is a string, it’s checked for a substring of value, otherwise SameValueZero is used for equality comparisons. If fromIndex is negative, it’s used as the offset from the end of collection. </br>
 
 Example: </br>
@@ -198,7 +198,7 @@ Example: </br>
       _.includes('abcd', 'bc');</br>
       // ➜ true</br>
       
-18. toString </br>
+toString </br>
 Converts value to a string. An empty string is returned for null and undefined values. The sign of -0 is preserved. </br>
 
 Example: </br>
@@ -212,7 +212,7 @@ Example: </br>
       _.toString([1, 2, 3]);</br>
       // ➜ '1,2,3'</br>
       
-19. forEach </br>
+forEach </br>
 Iterates over elements of collection and invokes iteratee for each element. The iteratee is invoked with three arguments: (value, index|key, collection). Iteratee functions may exit iteration early by explicitly returning false.  </br> 
 
 Example: </br>
@@ -227,7 +227,7 @@ Example: </br>
       });
       // ➜ Logs 'a' then 'b' (iteration order is not guaranteed). </br>
       
-20. lte </br>
+lte </br>
 Checks if value is less than or equal to other. </br>
 
 Example: </br>
@@ -240,7 +240,7 @@ Example: </br>
       
       _.lte(3, 1);</br>
       // ➜ false</br>
-21. initial </br> 
+initial </br> 
 Gets all but the last element of array. </br> 
 
 Example: </br>
@@ -248,7 +248,7 @@ Example: </br>
       _.initial([1, 2, 3]); </br>
       // ➜ [1, 2] </br>
 
-22. size </br>
+size </br>
 Gets the size of collection by returning its length for array-like values or the number of own enumerable string keyed properties for objects.</br>
 
 Example: </br>
@@ -262,7 +262,7 @@ Example: </br>
       _.size('pebbles');</br>
       // ➜ 7</br>
       
-23. toArray </br> 
+toArray </br> 
 Converts value to an array. </br>
 
 Example: </br>
@@ -279,7 +279,7 @@ Example: </br>
       _.toArray(null); </br>
       // ➜ [] </br>
 
-24. isArray </br> 
+isArray </br> 
 Checks if value is classified as an Array object. </br>
 
 Example: </br>
@@ -296,7 +296,7 @@ Example: </br>
       _.isArray(_.noop);</br>
       // ➜ false</br>
       
-25. filter </br> 
+filter </br> 
 Iterates over elements of collection, returning an array of all elements predicate returns truthy for. The predicate is invoked with three arguments: (value, index|key, collection).  </br>
 
 Example: </br>
@@ -321,7 +321,7 @@ Example: </br>
       _.filter(users, 'active');</br>
       // ➜ objects for ['barney']</br>
 
-26. concat </br> 
+concat </br> 
 Creates a new array concatenating array with any additional arrays and/or values. </br>
 
 Example: </br> 
