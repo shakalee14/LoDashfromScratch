@@ -4,7 +4,7 @@ const initial = input => {
   if ( !(input instanceof Array) ) {
     return []
   }
-    return input.splice(0, input.length-1)
+    return input.slice(0, input.length-1)
   
 }
 

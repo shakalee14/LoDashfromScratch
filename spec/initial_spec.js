@@ -17,4 +17,8 @@ describe('initial', ()=> {
     expect(initial( {a: 1, b:2 }) ).toEqual([])
   })
 
+  it('returns an empty array when the input array has one value', () => {
+    expect(initial([2])).toEqual([])
+  })
+
 })
