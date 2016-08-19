@@ -3,14 +3,13 @@ const forEach = ( collection, iteratee ) => {
     return null
   }
 
-  const fn = iteratee || ( () => {} )
+  const fn = iteratee || ( a => a )
 
   for ( let key in collection ) {
-      fn( collection[ key ], key, collection )
+    fn( collection[ key ], key, collection )
   }
 
-return collection
-
+  return collection
 }
 
 export { forEach }
