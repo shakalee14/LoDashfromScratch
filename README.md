@@ -1,22 +1,19 @@
 ## Description
 
-_Create a library of commonly used Lodash methods with Documentation and commenting using ES2015, publish the code as a package to NPM.
+Create a library of commonly used Lodash methods with documentation and commenting using ES6, publish the code as a package to NPM.
+
 ## Context
 
-_This goal is important in learning JavaScript and understanding how high level developer's write code for others to use and to understand ES2015.  This code will be used by other developers to make their jobs easier. The questions that this project will raise is how do we write packages that are easy to understand out of the box and simple to use right away. how to publish a package to NPM?._
+This goal is important in learning JavaScript and understanding how high level developers write code for others to use and to understand ES2015. This code will be used by other developers to make their jobs easier. The questions that this project will raise is how do we write packages that are easy to understand out of the box and simple to use right away. How to publish a package to NPM?
 
 ## Specifications
 
-_List of specifications (specs) for the completed goal. These are declarative sentences (statements) describing some quality or behavior of the final product._
-
-### Required
-
-- [ ] Pick commonly used methods to rewrite in ES2015.
-- [ ] Create a ReadMe that describes each method and provides an example of use. 
+- [X] Write functions in ES6.
+- [X] Create a ReadMe that describes each method and provides an example of use. 
 - [ ] Publish package to NPM.
-- [ ] Write tests for those methods described.
-- [ ] Complete 25 commonly used functions from the LoDash library
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [X] Write tests for those methods described.
+- [X] Complete 25 commonly used functions from the LoDash library
+- [X] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
 
