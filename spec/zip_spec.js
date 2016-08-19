@@ -1,6 +1,6 @@
 import { zip } from '../src/zip'
 
-fdescribe('zip', ()=> {
+describe('zip', ()=> {
   it('sorts arrays into new arrays based on their index in their original arrays', () => {
     expect(zip(['a', 'b'], [1, 2], [true, false])).toEqual([['a', 1, true], ['b', 2, false]])
   }),
