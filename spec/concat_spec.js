@@ -1,4 +1,4 @@
-import { concat } from "../dist/concat.js"
+import { concat } from "../src/concat.js"
 
 fdescribe('concat', ()=> {
   it('returns a new array with the input values', () => {
@@ -13,7 +13,7 @@ fdescribe('concat', ()=> {
     expect(concat('string')).toEqual(['string'])
   })
 
-   it('returns a new array with the input object', () => {
+  it('returns a new array with the input object', () => {
     expect(concat({a:1})).toEqual([{a:1}])
   })
 
